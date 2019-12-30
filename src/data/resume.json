@@ -1,0 +1,78 @@
+{
+  "header": {
+    "name": "YOUR NAME",
+    "position": "Your Job Title",
+    "location": "your location",
+    "email": "youremail@example.com",
+    "phone": "your-phone-num",
+    "facebookUrl": "https://facebook.com/your-facebook",
+    "linkedinUrl": "https://linkedin.com/in/your-linkedin",
+    "stackoverflowUrl": "https://stackoverflow.com/users/XXXXXXX/your-stackoverflow",
+    "githubUrl": "https://github.com/your-github"
+  },
+  "summary": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "educations": [
+    {
+      "title": "Your First University",
+      "date": "Jul 2011 - Dec 2012 | Consectetur adipiscing elit",
+      "description": "Lorem ipsum dolor sit amet."
+    },
+    {
+      "title": "Your Second University",
+      "date": "Aug 2007 - Jun 2011 | Ut enim ad minim veniam",
+      "description": "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+    }
+  ],
+  "experiences": [
+    {
+      "title": "Job Title 1",
+      "date": "Apr 2016 - Now | Your 1st, Inc.",
+      "roles": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+      ]
+    },
+    {
+      "title": "Job Title 2",
+      "date": "Apr 2013 - Mar 2016 | Your 2nd, Inc.",
+      "roles": [
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia"
+      ]
+    },
+    {
+      "title": "Job Title 3",
+      "date": "Dec 2011 - Mar 2012 | Your 3rd Co, Ltd.",
+      "roles": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Project Name 1",
+      "role": "Contributor",
+      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "title": "Project Name 2",
+      "role": "Creator and maintainer",
+      "description": "TDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+  ],
+  "skillGroups": [
+    {
+      "groupName": "Skill Group 1",
+      "skills": "Lorem, Ipsum, Dolor, Sit, Amet"
+    },
+    {
+      "groupName": "Skill Group 2",
+      "skills": "Consectetur, Adipiscing, Elit"
+    },
+    {
+      "groupName": "Skill Group 3",
+      "skills": "Sed do, Eiusmod, Tempor, Incididunt"
+    }
+  ]
+}
