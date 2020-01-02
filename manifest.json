@@ -6,10 +6,11 @@
       "src": "favicon.ico",
       "sizes": "16x16",
       "type": "image/x-icon"
-    },
+    }
   ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#495057",
   "background_color": "#ffffff"
 }
+git
