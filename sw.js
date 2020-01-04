@@ -27,20 +27,20 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-b9a6bd7a90cc5b712232.js"
+    "url": "webpack-runtime-f73b8719427ffa85fd15.js"
   },
   {
     "url": "commons-38d08cb712fcff520e6a.js"
   },
   {
-    "url": "app-75d23e9c3e5c38326c0f.js"
+    "url": "app-67b4c37b3d2cccf05c47.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-c5f58849c2f4732d93c1.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "bf24ac7f83291ae7467cdb0f2e930a20"
+    "revision": "22f0f02c16e7f7dcb608dfbbc810913f"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
@@ -136,12 +136,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   lastNavigationRequest = event.request.url
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^`), ``)
+  pathname = pathname.replace(new RegExp(`^/minimal-resume-theme`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-75d23e9c3e5c38326c0f.js`))) {
+  if (!resources || !(await caches.match(`/minimal-resume-theme/app-67b4c37b3d2cccf05c47.js`))) {
     return await fetch(event.request)
   }
 
@@ -154,7 +154,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/minimal-resume-theme/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
