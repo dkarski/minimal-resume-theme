@@ -7,7 +7,7 @@
 
 ## Introduction
 
-This is a responsive minimal résumé template.
+This is a responsive minimal résumé template made by [Daniel Karski](https://github.com/dkarski/minimal-resume-theme/), powered by [Gatsby.js](https://www.gatsbyjs.org/).
 
 You may config all the data in `json` and make it your own résumé. Then, you might use on GitHub Pages, your website, or wherever you want.
 
@@ -51,6 +51,8 @@ You may config all the data in `json` and make it your own résumé. Then, you m
     ```shell
     npm build
     ```
+    
+    :warning: before build make sure that `https://dkarski.github.io/minimal-resume-theme/` is replaced in the whole project to correct address
 
 6. Deploy on GitHub Pages
 
@@ -71,10 +73,14 @@ You may config all the data in `json` and make it your own résumé. Then, you m
 2. Add section to `src/App.js`:
 
 
-  ```html
+  ```jsx
   import React from 'react';
   
   const Summary = ({ summary }) => {
+    const {
+      dataJson: { summary },
+    } = useStaticQuery(query)
+    
     return (
       <div>
         <h1>Summary</h1>
@@ -82,16 +88,25 @@ You may config all the data in `json` and make it your own résumé. Then, you m
       </div>
     );
   };
+  
+  export default Summary
+  
+  export const query = graphql`
+    query {
+      dataJson {
+        summary
+      }
+    }
+  `
 
   ```
   
-  ```html
+  ```jsx
   import React from 'react';
-  import resume from './data/resume.json';
   
   const App = () => {
     return (
-      <Summary summary={resume.summary} />
+      <Summary />
     );
   }
   ```
