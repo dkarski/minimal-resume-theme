@@ -16,8 +16,11 @@ You may config all the data in `json` and make it your own résumé. Then, you m
 ## Features
 
 * Simple, elegant, and minimal design
-* PC and mobile friendly, but it looks better on PC
+* Responsive template
 * PDF supports and print friendly
+* Font preloads
+* Offline mode
+* sitemap.xml & robots.txt generation
 * Flexible and extensible
 
 ## Usage
